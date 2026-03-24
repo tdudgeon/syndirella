@@ -19,14 +19,14 @@ authors = [
 ]
 description = "Synthetically Driven Elaborations"
 readme = "README.md"
-requires-python = ">=3.10,<3.11"
+requires-python = "3.13"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "rdkit",
+    "rdkit==2025.09.5",
     "jupyter",
     "numpy<2",
     "glob2",
@@ -47,7 +47,7 @@ dependencies = [
     "pyrosetta-installer",
 ]
 [project.optional-dependencies]
-hippo = ["xchem-hippo", "rdkit>=2024.9.6"]
+hippo = ["xchem-hippo"]
 
 [project.urls]
 "Documentation" = "https://syndirella.readthedocs.io/en/latest/"
